@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Welcome to our blog and docs page',
   url: 'https://code-quality-metrics.github.io/docs/',
   baseUrl: '/docs/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/website-icon.png',
   organizationName: 'code-quality-metrics', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
@@ -11,7 +11,7 @@ module.exports = {
       title: 'Code Quality',
       logo: {
         alt: 'Code Quality Logo',
-        src: 'img/logo.svg',
+        src: 'img/website-icon.png',
       },
       links: [
         {
