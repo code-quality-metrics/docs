@@ -8,8 +8,9 @@ author_image_url: https://avatars2.githubusercontent.com/u/15112119?s=460&u=87d7
 tags: [node, modularity]
 ---
 
-> Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules
+Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules
 
+<!--truncate-->
 Modularity helps with:
 
 - migration
@@ -19,7 +20,6 @@ Modularity helps with:
 - reusability
 - maximize productivity
 - testing
-
 We should prevent code bases from growing organically.
 
 ## Things to consider when designing a module

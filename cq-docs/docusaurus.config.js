@@ -1,59 +1,59 @@
 module.exports = {
-  title: 'Code Quality',
-  tagline: 'Welcome to our blog and docs page',
-  url: 'https://code-quality-metrics.github.io/docs/',
-  baseUrl: '/docs/',
-  favicon: 'img/website-icon.png',
-  organizationName: 'code-quality-metrics', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  title: "Code Quality",
+  tagline: "Welcome to our blog and docs page",
+  url: "https://code-quality-metrics.github.io/docs/",
+  baseUrl: "/docs/",
+  favicon: "img/website-icon.png",
+  organizationName: "code-quality-metrics", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Code Quality',
+      title: "Code Quality",
       logo: {
-        alt: 'Code Quality Logo',
-        src: 'img/website-icon.png',
+        alt: "Code Quality Logo",
+        src: "img/website-icon.png",
       },
       links: [
         {
-          to: 'docs/doc1',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/doc1",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "blog", label: "Blog", position: "left" },
         {
-          href: 'https://github.com/code-quality-metrics',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/code-quality-metrics",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: "Style Guide",
+              to: "docs/doc1",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: "Second Doc",
+              to: "docs/doc2",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/code-quality-metrics',
+              label: "GitHub",
+              href: "https://github.com/code-quality-metrics",
             },
           ],
         },
@@ -63,20 +63,21 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 5,
           // editUrl:
           //   'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
