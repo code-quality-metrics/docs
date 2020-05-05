@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Code Quality!!',
-  tagline: 'CQ!!',
+  title: 'Code Quality',
+  tagline: 'CQ',
   url: 'https://code-quality-metrics.github.io/docs/',
   baseUrl: '/docs/',
   favicon: 'img/favicon.ico',
