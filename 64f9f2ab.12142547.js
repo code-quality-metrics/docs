@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{151:function(e){e.exports=JSON.parse('{"docsSidebars":{"someSidebar":[{"type":"category","label":"Node","items":[{"type":"link","label":"Advanced node js","href":"/docs/docs/doc1"}]},{"type":"category","label":"React","items":[]}]},"permalinkToSidebar":{"/docs/docs/doc1":"someSidebar"}}')}}]);

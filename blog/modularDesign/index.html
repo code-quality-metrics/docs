@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+
+
+<title data-react-helmet="true">Modular design | Code Quality</title>
+
+<meta data-react-helmet="true" property="og:title" content="Modular design | Code Quality"><meta data-react-helmet="true" name="description" content="&gt; Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules"><meta data-react-helmet="true" property="og:description" content="&gt; Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image">
+
+<link data-react-helmet="true" rel="shortcut icon" href="/docs/img/website-icon.png">
+
+
+<link rel="stylesheet" href="/docs/styles.cb408154.css">
+
+
+<link rel="preload" href="/docs/styles.cea02311.js" as="script">
+
+<link rel="preload" href="/docs/runtime~main.1a688e45.js" as="script">
+
+<link rel="preload" href="/docs/main.f0ab4956.js" as="script">
+
+<link rel="preload" href="/docs/common.b3018f51.js" as="script">
+
+<link rel="preload" href="/docs/2.969100a1.js" as="script">
+
+<link rel="preload" href="/docs/ccc49370.28303939.js" as="script">
+
+<link rel="preload" href="/docs/35c789cd.976a8da8.js" as="script">
+
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script>
+<div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/docs/"><img class="navbar__logo" src="/docs/img/website-icon.png" alt="Code Quality Logo"><strong class="navbar__title">Code Quality</strong></a><a class="navbar__item navbar__link" href="/docs/docs/doc1">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics" class="navbar__item navbar__link">GitHub</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_1gtM"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_keGJ moon_1gwN"></span></div><div class="react-toggle-track-x"><span class="toggle_keGJ sun_3CPA"></span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/docs/"><img class="navbar__logo" src="/docs/img/website-icon.png" alt="Code Quality Logo"><strong class="navbar__title">Code Quality</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" position="left" href="/docs/docs/doc1">Docs</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" position="left" href="/docs/blog">Blog</a></li><li class="menu__list-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics" class="menu__link" position="right">GitHub</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="container margin-vert--lg"><div class="row"><div class="col col--8 col--offset-2"><article><header><h1 class="margin-bottom--sm blogPostTitle_2RZH">Modular design</h1><div class="margin-vert--md"><time datetime="2020-05-05T00:00:00.000Z" class="blogPostDate_3tRe">May 5, 2020  · 2 min read</time></div><div class="avatar margin-vert--md"><a class="avatar__photo-link avatar__photo" href="https://github.com/DavidOVM" target="_blank" rel="noreferrer noopener"><img src="https://avatars2.githubusercontent.com/u/15112119?s=460&amp;u=87d77526d3584da629e60e6cf8c5f65b0f9749c7&amp;v=4" alt="David Ortiz"></a><div class="avatar__intro"><h4 class="avatar__name"><a href="https://github.com/DavidOVM" target="_blank" rel="noreferrer noopener">David Ortiz</a></h4><small class="avatar__subtitle"></small></div></div></header><section class="markdown"><blockquote><p>Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules</p></blockquote><p>Modularity helps with:</p><ul><li>migration</li><li>maintainability</li><li>future development</li><li>deployments</li><li>reusability</li><li>maximize productivity</li><li>testing</li></ul><p>We should prevent code bases from growing organically.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="things-to-consider-when-designing-a-module"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#things-to-consider-when-designing-a-module" title="Direct link to heading">#</a>Things to consider when designing a module</h2><p>There are certain things we should take into account when deciding if a new feature should be a module or not.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="comply-with-the-single-responsibility-principle"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#comply-with-the-single-responsibility-principle" title="Direct link to heading">#</a>Comply with the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle</a>.</h3><p>The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class, module or function.</p><p>A module should be narrow and focused. It should have exclusive responsibility of a piece of the whole system. Every interaction with that piece should be handle by the module. </p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="api-design"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#api-design" title="Direct link to heading">#</a>API design</h3><p>A module should provide an interface for other modules or clients to interact with it. Pay special attencion to the design and definition of this interface (API). See <a href="https://nordicapis.com/the-three-principles-of-excellent-api-design/">The Three Principles of Excellent API Design</a>: Purpose, Usability and Constraints.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="encapsulation"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#encapsulation" title="Direct link to heading">#</a>Encapsulation</h3><p>Limit the exposure of modules within their system. Only provide a controlled interface for access. The inner implementation should be changable withoutn interfiering with the clients. Control the dependencies between modules and minimize them to improve scalability. The network formed by the modules should be logical, easy to follow and simple.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="avoid-mono-dependencies"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#avoid-mono-dependencies" title="Direct link to heading">#</a>Avoid mono-dependencies</h3><p>Submodules are a thing. If a module is only used by another module and won&#x27;t be shared by any other modules maybe it should be part of its parent. Creating modules that have a 1-1 relation could generate mess in the system. Consider merging those modules or have one become a submodule.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="be-aware-of-context"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#be-aware-of-context" title="Direct link to heading">#</a>Be aware of context</h3><p>Be aware of your system context. Sometimes too many modules don&#x27;t make sense for small systems. Modularization should be subjective and should not be pursued if it won&#x27;t increase clarity.</p><p><a href="https://medium.com/@shanebdavis/the-5-essential-elements-of-modular-software-design-6b333918e543">5 essentials of modular design</a></p><p>For node: TODO:</p><ul><li>libs (external, separate directory)</li><li>organize db models (other repo)</li><li>feature modularization</li></ul></section><footer class="row margin-vert--lg"><div class="col"><strong>Tags:</strong><a class="margin-horiz--sm" href="/docs/blog/tags/node">node</a><a class="margin-horiz--sm" href="/docs/blog/tags/modularity">modularity</a></div></footer></article><div></div><div class="margin-vert--xl"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/blog/testing"><div class="pagination-nav__link--sublabel">Next Post</div><div class="pagination-nav__link--label">Testing in Node »</div></a></div></nav></div></div></div></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/docs/doc2">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 CQ. Built with Docusaurus.</div></div></div></footer>
+</div>
+
+<script src="/docs/styles.cea02311.js"></script>
+
+<script src="/docs/runtime~main.1a688e45.js"></script>
+
+<script src="/docs/main.f0ab4956.js"></script>
+
+<script src="/docs/common.b3018f51.js"></script>
+
+<script src="/docs/2.969100a1.js"></script>
+
+<script src="/docs/ccc49370.28303939.js"></script>
+
+<script src="/docs/35c789cd.976a8da8.js"></script>
+
+
+</body>
+</html>
