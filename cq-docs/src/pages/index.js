@@ -10,6 +10,7 @@ const features = [
   {
     title: <>Blog</>,
     // imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    to: 'blog',
     description: (
       <>
         Blog articles based on our knowledge and
@@ -20,15 +21,17 @@ const features = [
   {
     title: <>Docs</>,
     // imageUrl: 'img/undraw_docusaurus_tree.svg',
+    to: 'docs/doc1',
     description: (
       <>
-        
+        Notes and documentation on technology.
       </>
     ),
   },
   {
     title: <>Contribute</>,
     // imageUrl: 'img/undraw_docusaurus_tree.svg',
+    to: 'https://code-quality-metrics.github.io',
     description: (
       <>
         Get in touch if you wanna help out.
@@ -37,7 +40,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, to, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
@@ -46,7 +49,7 @@ function Feature({imageUrl, title, description}) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <Link to={useBaseUrl(to)}><h3>{title}</h3></Link>
       <p>{description}</p>
     </div>
   );

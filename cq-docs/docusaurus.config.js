@@ -1,11 +1,11 @@
 module.exports = {
   title: "Code Quality",
   tagline: "Welcome to our blog and docs page",
-  url: "https://code-quality-metrics.github.io/docs/",
-  baseUrl: "/docs/",
+  url: "https://code-quality-metrics.github.io/docs-and-blog/",
+  baseUrl: "/docs-and-blog/",
   favicon: "img/website-icon.png",
   organizationName: "code-quality-metrics", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
+  projectName: "docs-and-blog", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Code Quality",
@@ -32,15 +32,15 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Blog posts",
           items: [
             {
-              label: "Style Guide",
-              to: "docs/doc1",
+              label: "Node",
+              to: "blog/tags/node",
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2",
+              label: "React",
+              to: "blog/tags/react",
             },
           ],
         },
@@ -48,8 +48,8 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "blog",
+              label: "Main Page",
+              to: "https://code-quality-metrics.github.io",
             },
             {
               label: "GitHub",
