@@ -82,7 +82,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 301);
+/******/ 	return __webpack_require__(__webpack_require__.s = 302);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -358,9 +358,9 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
 /* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
-/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28);
+/* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
 /* harmony import */ var _ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_3__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -539,7 +539,7 @@ module.exports = {
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(24)
+var fs = __webpack_require__(25)
 var polyfills = __webpack_require__(260)
 var legacy = __webpack_require__(262)
 var clone = __webpack_require__(263)
@@ -1065,7 +1065,7 @@ var router = __webpack_require__(59);
  * LICENSE file in the root directory of this source tree.
  */function useLocationHash(initialHash){const[hash,setHash]=Object(react["useState"])(initialHash);Object(react["useEffect"])(()=>{const handleHashChange=()=>setHash(window.location.hash);window.addEventListener('hashchange',handleHashChange);return()=>window.removeEventListener('hashchange',handleHashChange);},[]);return[hash,setHash];}/* harmony default export */ var hooks_useLocationHash = (useLocationHash);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/ExecutionEnvironment.js
-var ExecutionEnvironment = __webpack_require__(28);
+var ExecutionEnvironment = __webpack_require__(22);
 var ExecutionEnvironment_default = /*#__PURE__*/__webpack_require__.n(ExecutionEnvironment);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/hooks/useScrollPosition.js
@@ -3179,6 +3179,17 @@ module.exports = {
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const canUseDOM=!!(typeof window!=='undefined'&&window.document&&window.document.createElement);const ExecutionEnvironment={canUseDOM,canUseEventListeners:canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObserver:canUseDOM&&'IntersectionObserver'in window,canUseViewport:canUseDOM&&!!window.screen};module.exports=ExecutionEnvironment;
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var roundingPrecisionFrom = __webpack_require__(92).roundingPrecisionFrom;
@@ -3405,7 +3416,7 @@ module.exports = {
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -3420,19 +3431,19 @@ module.exports = {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("fs");
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("url");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Contains the interpretation of CSS properties, as used by the property optimizer
@@ -4501,7 +4512,7 @@ module.exports = override(compactable, vendorPrefixedCompactable);
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4784,17 +4795,6 @@ if (false) { var ariaCurrentType; }
 
 //# sourceMappingURL=react-router-dom.js.map
 
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const canUseDOM=!!(typeof window!=='undefined'&&window.document&&window.document.createElement);const ExecutionEnvironment={canUseDOM,canUseEventListeners:canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObserver:canUseDOM&&'IntersectionObserver'in window,canUseViewport:canUseDOM&&!!window.screen};module.exports=ExecutionEnvironment;
 
 /***/ }),
 /* 29 */
@@ -9626,7 +9626,7 @@ var wrapForOptimizing = __webpack_require__(34).all;
 var removeUnused = __webpack_require__(91);
 var restoreFromOptimizing = __webpack_require__(38);
 
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 
 function optimizeProperties(properties, withOverriding, withMerging, context) {
   var levelOptions = context.options.level[OptimizationLevel.Two];
@@ -11065,7 +11065,7 @@ HelmetExport.renderStatic = HelmetExport.rewind;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(27);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return react_router_dom__WEBPACK_IMPORTED_MODULE_0__["d"]; });
@@ -11197,7 +11197,7 @@ function renderRoutes(routes, extraProps, switchProps) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({"plugins":[],"themes":[],"customFields":{},"themeConfig":{"navbar":{"title":"Code Quality","logo":{"alt":"Code Quality Logo","src":"img/website-icon.png"},"links":[{"to":"docs/doc1","activeBasePath":"docs","label":"Docs","position":"left"},{"to":"blog","label":"Blog","position":"left"},{"href":"https://github.com/code-quality-metrics","label":"GitHub","position":"right"}]},"footer":{"style":"dark","links":[{"title":"Blog posts","items":[{"label":"Node","to":"blog/tags/node"},{"label":"React","to":"blog/tags/react"}]},{"title":"More","items":[{"label":"Main Page","to":"https://code-quality-metrics.github.io"},{"label":"GitHub","href":"https://github.com/code-quality-metrics"}]}],"copyright":"Copyright © 2020 CQ. Built with Docusaurus."}},"title":"Code Quality","tagline":"Welcome to our blog and docs page","url":"https://code-quality-metrics.github.io/docs-and-blog/","baseUrl":"/docs-and-blog/","favicon":"img/website-icon.png","organizationName":"code-quality-metrics","projectName":"docs-and-blog","presets":[["@docusaurus/preset-classic",{"docs":{"sidebarPath":"/Users/profesional/Documents/proyectos/code-quality-metrics/docs-and-blog/cq-docs/sidebars.js"},"blog":{"showReadingTime":true,"postsPerPage":5},"theme":{"customCss":"/Users/profesional/Documents/proyectos/code-quality-metrics/docs-and-blog/cq-docs/src/css/custom.css"}}]]});
+/* harmony default export */ __webpack_exports__["a"] = ({"plugins":[],"themes":[],"customFields":{},"themeConfig":{"navbar":{"title":"Code Quality","logo":{"alt":"Code Quality Logo","src":"img/website-icon.png"},"links":[{"to":"docs/doc1","activeBasePath":"docs","label":"Docs","position":"left"},{"to":"blog","label":"Blog","position":"left"},{"href":"https://github.com/code-quality-metrics","label":"GitHub","position":"right"}]},"footer":{"style":"dark","links":[{"title":"Blog posts","items":[{"label":"Node","to":"blog/tags/node"},{"label":"React","to":"blog/tags/react"}]},{"title":"More","items":[{"label":"Main Page","to":"https://code-quality-metrics.github.io"},{"label":"GitHub","href":"https://github.com/code-quality-metrics"}]}],"copyright":"Copyright © 2020 CQ. Built with Docusaurus."},"googleAnalytics":{"trackingID":"UA-165829341-2"}},"title":"Code Quality","tagline":"Welcome to our blog and docs page","url":"https://code-quality-metrics.github.io/docs-and-blog/","baseUrl":"/docs-and-blog/","favicon":"img/website-icon.png","organizationName":"code-quality-metrics","projectName":"docs-and-blog","presets":[["@docusaurus/preset-classic",{"docs":{"sidebarPath":"/Users/profesional/Documents/proyectos/code-quality-metrics/docs-and-blog/cq-docs/sidebars.js"},"blog":{"showReadingTime":true,"postsPerPage":5},"theme":{"customCss":"/Users/profesional/Documents/proyectos/code-quality-metrics/docs-and-blog/cq-docs/src/css/custom.css"}}]]});
 
 /***/ }),
 /* 65 */
@@ -11719,7 +11719,7 @@ var useDocusaurusContext = __webpack_require__(6);
 var useThemeContext = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/styles.module.css
-var styles_module = __webpack_require__(23);
+var styles_module = __webpack_require__(24);
 var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/CodeBlock/index.js
@@ -12857,7 +12857,7 @@ module.exports = {
 /* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var InvalidPropertyError = __webpack_require__(95);
 
 function populateComponents(properties, validator, warnings) {
@@ -12905,7 +12905,7 @@ module.exports = populateComponents;
 /* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function restoreWithComponents(property) {
   var descriptor = compactable[property.name];
@@ -13004,7 +13004,7 @@ module.exports = extractProperties;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(7);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var isRemoteResource = __webpack_require__(40);
 var hasProtocol = __webpack_require__(51);
@@ -13233,7 +13233,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./": 296
+	"./": 297
 };
 
 
@@ -14829,7 +14829,7 @@ module.exports = rebaseLocalMap;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(7);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 function rebaseRemoteMap(sourceMap, sourceUri) {
   var sourceDirectory = path.dirname(sourceUri);
@@ -16272,9 +16272,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(32);
 /* harmony import */ var _styles_module_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_module_css__WEBPACK_IMPORTED_MODULE_7__);
 const features=[{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Blog"),// imageUrl: 'img/undraw_docusaurus_mountain.svg',
-to:"blog",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Blog articles based on our knowledge and expertise. Mainly Node, JS and React.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Docs"),// imageUrl: 'img/undraw_docusaurus_tree.svg',
-to:"docs/doc1",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Notes and documentation on technology.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Contribute"),// imageUrl: 'img/undraw_docusaurus_tree.svg',
-to:"https://code-quality-metrics.github.io",description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Get in touch if you wanna help out.")}];function Feature({imageUrl,to,title,description}){const imgUrl=Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(imageUrl);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("col col--4",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.feature)},imgUrl&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"text--center"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.featureImage,src:imgUrl,alt:title})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(to)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3",null,title)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",null,description));}function Home(){const context=Object(_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])();const{siteConfig={gaTrackingId:"UA-165829341-2"}}=context;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{title:`${siteConfig.title}`,description:"Code Quality Blog and Documentation"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("hero hero--primary",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.heroBanner)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1",{className:"hero__title"},siteConfig.title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",{className:"hero__subtitle"},siteConfig.tagline),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.buttons},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()("button button--outline button--secondary button--lg",_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.getStarted),to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])("docs/doc1")},"Get Started")))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main",null,features&&features.length&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.features},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"row"},features.map((props,idx)=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Feature,Object(_Users_profesional_Documents_proyectos_code_quality_metrics_docs_and_blog_cq_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({key:idx},props))))))));}/* harmony default export */ __webpack_exports__["default"] = (Home);
+to:'blog',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Blog articles based on our knowledge and expertise. Mainly Node, JS and React.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Docs"),// imageUrl: 'img/undraw_docusaurus_tree.svg',
+to:'docs/doc1',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Notes and documentation on technology.")},{title:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Contribute"),// imageUrl: 'img/undraw_docusaurus_tree.svg',
+to:'https://code-quality-metrics.github.io',description:/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment,null,"Get in touch if you wanna help out.")}];function Feature({imageUrl,to,title,description}){const imgUrl=Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(imageUrl);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()('col col--4',_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.feature)},imgUrl&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"text--center"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.featureImage,src:imgUrl,alt:title})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(to)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3",null,title)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",null,description));}function Home(){const context=Object(_docusaurus_useDocusaurusContext__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])();const{siteConfig={}}=context;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"],{title:`${siteConfig.title}`,description:"Code Quality Blog and Documentation"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header",{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()('hero hero--primary',_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.heroBanner)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1",{className:"hero__title"},siteConfig.title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p",{className:"hero__subtitle"},siteConfig.tagline),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.buttons},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_docusaurus_Link__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"],{className:classnames__WEBPACK_IMPORTED_MODULE_2___default()('button button--outline button--secondary button--lg',_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.getStarted),to:Object(_docusaurus_useBaseUrl__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])('docs/doc1')},"Get Started")))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main",null,features&&features.length&&/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section",{className:_styles_module_css__WEBPACK_IMPORTED_MODULE_7___default.a.features},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div",{className:"row"},features.map((props,idx)=>/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Feature,Object(_Users_profesional_Documents_proyectos_code_quality_metrics_docs_and_blog_cq_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({key:idx},props))))))));}/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 /* 135 */
@@ -18144,7 +18144,7 @@ module.exports = Object.assign(
 
 // Export fs.promises as a getter property so that we don't trigger
 // ExperimentalWarning before fs.promises is actually accessed.
-const fs = __webpack_require__(24)
+const fs = __webpack_require__(25)
 if (Object.getOwnPropertyDescriptor(fs, 'promises')) {
   Object.defineProperty(module.exports, 'promises', {
     get () { return fs.promises }
@@ -19801,11 +19801,11 @@ module.exports = ReactPropTypesSecret;
 exports.__esModule = true;
 exports["default"] = exports.defaultOptions = void 0;
 
-var _fs = _interopRequireDefault(__webpack_require__(24));
+var _fs = _interopRequireDefault(__webpack_require__(25));
 
 var _path = _interopRequireDefault(__webpack_require__(7));
 
-var _url = _interopRequireDefault(__webpack_require__(25));
+var _url = _interopRequireDefault(__webpack_require__(26));
 
 var _utils = __webpack_require__(89);
 
@@ -20264,8 +20264,8 @@ var formatFrom = __webpack_require__(45).formatFrom;
 var inlineFrom = __webpack_require__(211);
 var inlineRequestFrom = __webpack_require__(212);
 var inlineTimeoutFrom = __webpack_require__(213);
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
-var optimizationLevelFrom = __webpack_require__(22).optimizationLevelFrom;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
+var optimizationLevelFrom = __webpack_require__(23).optimizationLevelFrom;
 var rebaseFrom = __webpack_require__(214);
 var rebaseToFrom = __webpack_require__(215);
 
@@ -20449,7 +20449,7 @@ var removeUnused = __webpack_require__(91);
 var restoreFromOptimizing = __webpack_require__(38);
 var wrapForOptimizing = __webpack_require__(34).all;
 
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 
 var Token = __webpack_require__(8);
 var Marker = __webpack_require__(12);
@@ -21505,7 +21505,7 @@ var restructure = __webpack_require__(201);
 
 var optimizeProperties = __webpack_require__(48);
 
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 
 var Token = __webpack_require__(8);
 
@@ -21639,7 +21639,7 @@ var optimizeProperties = __webpack_require__(48);
 var sortSelectors = __webpack_require__(70);
 var tidyRules = __webpack_require__(71);
 
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 
 var serializeBody = __webpack_require__(9).body;
 var serializeRules = __webpack_require__(9).rules;
@@ -21692,7 +21692,7 @@ var everyValuesPair = __webpack_require__(93);
 var hasInherit = __webpack_require__(94);
 var populateComponents = __webpack_require__(75);
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var deepClone = __webpack_require__(49).deep;
 var restoreWithComponents = __webpack_require__(76);
 
@@ -23416,7 +23416,7 @@ var isMergeableShorthand = __webpack_require__(189);
 var overridesNonComponentShorthand = __webpack_require__(190);
 var sameVendorPrefixesIn = __webpack_require__(96).same;
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 var deepClone = __webpack_require__(49).deep;
 var restoreWithComponents = __webpack_require__(76);
 var shallowClone = __webpack_require__(49).shallow;
@@ -23898,7 +23898,7 @@ module.exports = overrideProperties;
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function findComponentIn(shorthand, longhand) {
   var comparator = nameComparator(longhand);
@@ -23944,7 +23944,7 @@ module.exports = findComponentIn;
 /* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function isComponentOf(property1, property2, shallow) {
   return isDirectComponentOf(property1, property2) ||
@@ -23989,7 +23989,7 @@ module.exports = isMergeableShorthand;
 /* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var compactable = __webpack_require__(26);
+var compactable = __webpack_require__(27);
 
 function overridesNonComponentShorthand(property1, property2) {
   return property1.name in compactable &&
@@ -24010,7 +24010,7 @@ var extractProperties = __webpack_require__(77);
 var rulesOverlap = __webpack_require__(97);
 
 var serializeRules = __webpack_require__(9).rules;
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 var Token = __webpack_require__(8);
 
 function mergeMediaQueries(tokens, context) {
@@ -24241,7 +24241,7 @@ var isMergeable = __webpack_require__(47);
 var sortSelectors = __webpack_require__(70);
 var tidyRules = __webpack_require__(71);
 
-var OptimizationLevel = __webpack_require__(22).OptimizationLevel;
+var OptimizationLevel = __webpack_require__(23).OptimizationLevel;
 
 var serializeBody = __webpack_require__(9).body;
 var serializeRules = __webpack_require__(9).rules;
@@ -26129,7 +26129,7 @@ module.exports = fetchFrom;
 
 var http = __webpack_require__(207);
 var https = __webpack_require__(208);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var isHttpResource = __webpack_require__(209);
 var isHttpsResource = __webpack_require__(210);
@@ -26266,7 +26266,7 @@ module.exports = inlineOptionsFrom;
 /* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var override = __webpack_require__(33);
 
@@ -28360,7 +28360,7 @@ exports.SourceNode = SourceNode;
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(24);
+var fs = __webpack_require__(25);
 var path = __webpack_require__(7);
 
 var applySourceMaps = __webpack_require__(224);
@@ -28707,7 +28707,7 @@ module.exports = readSources;
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(24);
+var fs = __webpack_require__(25);
 var path = __webpack_require__(7);
 
 var isAllowedResource = __webpack_require__(78);
@@ -28984,7 +28984,7 @@ module.exports = isDataUriResource;
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fs = __webpack_require__(24);
+var fs = __webpack_require__(25);
 var path = __webpack_require__(7);
 
 var isAllowedResource = __webpack_require__(78);
@@ -29238,7 +29238,7 @@ module.exports = rebase;
 /***/ (function(module, exports, __webpack_require__) {
 
 var path = __webpack_require__(7);
-var url = __webpack_require__(25);
+var url = __webpack_require__(26);
 
 var DOUBLE_QUOTE = '"';
 var SINGLE_QUOTE = '\'';
@@ -31724,7 +31724,7 @@ module.exports = parseQuery;
 "use strict";
 
 
-var _parseUrl = __webpack_require__(25).parse;
+var _parseUrl = __webpack_require__(26).parse;
 
 
 
@@ -36041,7 +36041,7 @@ var _fs
 try {
   _fs = __webpack_require__(10)
 } catch (_) {
-  _fs = __webpack_require__(24)
+  _fs = __webpack_require__(25)
 }
 
 function readFile (file, options, callback) {
@@ -36567,18 +36567,37 @@ function pointerCoord(event) {
 
 /***/ }),
 /* 294 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *//* harmony default export */ __webpack_exports__["default"] = ((function(){if(!_docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_0___default.a.canUseDOM){return null;}return{onRouteUpdate({location}){// Set page so that subsequent hits on this page are attributed
+// to this page. This is recommended for Single-page Applications.
+window.ga('set','page',location.pathname);// Always refer to the variable on window in-case it gets
+// overridden elsewhere.
+window.ga('send','pageview');}};})());
+
+/***/ }),
+/* 295 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prism_react_renderer_prism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(35);
-/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+/* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _generated_docusaurus_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(64);
 /**
@@ -36590,11 +36609,11 @@ __webpack_require__.r(__webpack_exports__);
 });delete window.Prism;}})();
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const components = __webpack_require__(297);
-const getLoader = __webpack_require__(298);
+const components = __webpack_require__(298);
+const getLoader = __webpack_require__(299);
 
 
 /**
@@ -36652,14 +36671,14 @@ module.exports = loadLanguages;
 
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var components = {"core":{"meta":{"path":"components/prism-core.js","option":"mandatory"},"core":"Core"},"themes":{"meta":{"path":"themes/{id}.css","link":"index.html?theme={id}","exclusive":true},"prism":{"title":"Default","option":"default"},"prism-dark":"Dark","prism-funky":"Funky","prism-okaidia":{"title":"Okaidia","owner":"ocodia"},"prism-twilight":{"title":"Twilight","owner":"remybach"},"prism-coy":{"title":"Coy","owner":"tshedor"},"prism-solarizedlight":{"title":"Solarized Light","owner":"hectormatos2011 "},"prism-tomorrow":{"title":"Tomorrow Night","owner":"Rosey"}},"languages":{"meta":{"path":"components/prism-{id}","noCSS":true,"examplesPath":"examples/prism-{id}","addCheckAll":true},"markup":{"title":"Markup","alias":["html","xml","svg","mathml"],"aliasTitles":{"html":"HTML","xml":"XML","svg":"SVG","mathml":"MathML"},"option":"default"},"css":{"title":"CSS","option":"default","modify":"markup"},"clike":{"title":"C-like","option":"default"},"javascript":{"title":"JavaScript","require":"clike","modify":"markup","alias":"js","option":"default"},"abap":{"title":"ABAP","owner":"dellagustin"},"abnf":{"title":"Augmented Backus–Naur form","owner":"RunDevelopment"},"actionscript":{"title":"ActionScript","require":"javascript","modify":"markup","owner":"Golmote"},"ada":{"title":"Ada","owner":"Lucretia"},"antlr4":{"title":"ANTLR4","alias":"g4","owner":"RunDevelopment"},"apacheconf":{"title":"Apache Configuration","owner":"GuiTeK"},"apl":{"title":"APL","owner":"ngn"},"applescript":{"title":"AppleScript","owner":"Golmote"},"aql":{"title":"AQL","owner":"RunDevelopment"},"arduino":{"title":"Arduino","require":"cpp","owner":"eisbehr-"},"arff":{"title":"ARFF","owner":"Golmote"},"asciidoc":{"alias":"adoc","title":"AsciiDoc","owner":"Golmote"},"asm6502":{"title":"6502 Assembly","owner":"kzurawel"},"aspnet":{"title":"ASP.NET (C#)","require":["markup","csharp"],"owner":"nauzilus"},"autohotkey":{"title":"AutoHotkey","owner":"aviaryan"},"autoit":{"title":"AutoIt","owner":"Golmote"},"bash":{"title":"Bash","alias":"shell","aliasTitles":{"shell":"Shell"},"owner":"zeitgeist87"},"basic":{"title":"BASIC","owner":"Golmote"},"batch":{"title":"Batch","owner":"Golmote"},"bbcode":{"title":"BBcode","alias":"shortcode","aliasTitles":{"shortcode":"Shortcode"},"owner":"RunDevelopment"},"bison":{"title":"Bison","require":"c","owner":"Golmote"},"bnf":{"title":"Backus–Naur form","alias":"rbnf","aliasTitles":{"rbnf":"Routing Backus–Naur form"},"owner":"RunDevelopment"},"brainfuck":{"title":"Brainfuck","owner":"Golmote"},"brightscript":{"title":"BrightScript","owner":"RunDevelopment"},"bro":{"title":"Bro","owner":"wayward710"},"c":{"title":"C","require":"clike","owner":"zeitgeist87"},"concurnas":{"title":"Concurnas","alias":"conc","owner":"jasontatton"},"csharp":{"title":"C#","require":"clike","alias":["cs","dotnet"],"owner":"mvalipour"},"cpp":{"title":"C++","require":"c","owner":"zeitgeist87"},"cil":{"title":"CIL","owner":"sbrl"},"coffeescript":{"title":"CoffeeScript","require":"javascript","alias":"coffee","owner":"R-osey"},"cmake":{"title":"CMake","owner":"mjrogozinski"},"clojure":{"title":"Clojure","owner":"troglotit"},"crystal":{"title":"Crystal","require":"ruby","owner":"MakeNowJust"},"csp":{"title":"Content-Security-Policy","owner":"ScottHelme"},"css-extras":{"title":"CSS Extras","require":"css","modify":"css","owner":"milesj"},"d":{"title":"D","require":"clike","owner":"Golmote"},"dart":{"title":"Dart","require":"clike","owner":"Golmote"},"dax":{"title":"DAX","owner":"peterbud"},"diff":{"title":"Diff","owner":"uranusjr"},"django":{"title":"Django/Jinja2","require":"markup-templating","alias":"jinja2","owner":"romanvm"},"dns-zone-file":{"title":"DNS zone file","owner":"RunDevelopment","alias":"dns-zone"},"docker":{"title":"Docker","alias":"dockerfile","owner":"JustinBeckwith"},"ebnf":{"title":"Extended Backus–Naur form","owner":"RunDevelopment"},"eiffel":{"title":"Eiffel","owner":"Conaclos"},"ejs":{"title":"EJS","require":["javascript","markup-templating"],"owner":"RunDevelopment"},"elixir":{"title":"Elixir","owner":"Golmote"},"elm":{"title":"Elm","owner":"zwilias"},"etlua":{"title":"Embedded Lua templating","require":["lua","markup-templating"],"owner":"RunDevelopment"},"erb":{"title":"ERB","require":["ruby","markup-templating"],"owner":"Golmote"},"erlang":{"title":"Erlang","owner":"Golmote"},"excel-formula":{"title":"Excel Formula","alias":["xlsx","xls"],"owner":"RunDevelopment"},"fsharp":{"title":"F#","require":"clike","owner":"simonreynolds7"},"factor":{"title":"Factor","owner":"catb0t"},"firestore-security-rules":{"title":"Firestore security rules","require":"clike","owner":"RunDevelopment"},"flow":{"title":"Flow","require":"javascript","owner":"Golmote"},"fortran":{"title":"Fortran","owner":"Golmote"},"ftl":{"title":"FreeMarker Template Language","require":"markup-templating","owner":"RunDevelopment"},"gcode":{"title":"G-code","owner":"RunDevelopment"},"gdscript":{"title":"GDScript","owner":"RunDevelopment"},"gedcom":{"title":"GEDCOM","owner":"Golmote"},"gherkin":{"title":"Gherkin","owner":"hason"},"git":{"title":"Git","owner":"lgiraudel"},"glsl":{"title":"GLSL","require":"clike","owner":"Golmote"},"gml":{"title":"GameMaker Language","alias":"gamemakerlanguage","require":"clike","owner":"LiarOnce"},"go":{"title":"Go","require":"clike","owner":"arnehormann"},"graphql":{"title":"GraphQL","owner":"Golmote"},"groovy":{"title":"Groovy","require":"clike","owner":"robfletcher"},"haml":{"title":"Haml","require":"ruby","optional":["css","css-extras","coffeescript","erb","javascript","less","markdown","scss","textile"],"owner":"Golmote"},"handlebars":{"title":"Handlebars","require":"markup-templating","owner":"Golmote"},"haskell":{"title":"Haskell","alias":"hs","owner":"bholst"},"haxe":{"title":"Haxe","require":"clike","owner":"Golmote"},"hcl":{"title":"HCL","owner":"outsideris"},"http":{"title":"HTTP","optional":["css","javascript","json","markup"],"owner":"danielgtaylor"},"hpkp":{"title":"HTTP Public-Key-Pins","owner":"ScottHelme"},"hsts":{"title":"HTTP Strict-Transport-Security","owner":"ScottHelme"},"ichigojam":{"title":"IchigoJam","owner":"BlueCocoa"},"icon":{"title":"Icon","owner":"Golmote"},"inform7":{"title":"Inform 7","owner":"Golmote"},"ini":{"title":"Ini","owner":"aviaryan"},"io":{"title":"Io","owner":"AlesTsurko"},"j":{"title":"J","owner":"Golmote"},"java":{"title":"Java","require":"clike","owner":"sherblot"},"javadoc":{"title":"JavaDoc","require":["markup","java","javadoclike"],"modify":"java","optional":"scala","owner":"RunDevelopment"},"javadoclike":{"title":"JavaDoc-like","modify":["java","javascript","php"],"owner":"RunDevelopment"},"javastacktrace":{"title":"Java stack trace","owner":"RunDevelopment"},"jolie":{"title":"Jolie","require":"clike","owner":"thesave"},"jq":{"title":"JQ","owner":"RunDevelopment"},"jsdoc":{"title":"JSDoc","require":["javascript","javadoclike"],"modify":"javascript","optional":["actionscript","coffeescript"],"owner":"RunDevelopment"},"js-extras":{"title":"JS Extras","require":"javascript","modify":"javascript","optional":["actionscript","coffeescript","flow","n4js","typescript"],"owner":"RunDevelopment"},"js-templates":{"title":"JS Templates","require":"javascript","modify":"javascript","optional":["css","css-extras","graphql","markdown","markup"],"owner":"RunDevelopment"},"json":{"title":"JSON","owner":"CupOfTea696"},"jsonp":{"title":"JSONP","require":"json","owner":"RunDevelopment"},"json5":{"title":"JSON5","require":"json","owner":"RunDevelopment"},"julia":{"title":"Julia","owner":"cdagnino"},"keyman":{"title":"Keyman","owner":"mcdurdin"},"kotlin":{"title":"Kotlin","require":"clike","owner":"Golmote"},"latex":{"title":"LaTeX","alias":["tex","context"],"aliasTitles":{"tex":"TeX","context":"ConTeXt"},"owner":"japborst"},"latte":{"title":"Latte","require":["clike","markup-templating","php"],"owner":"nette"},"less":{"title":"Less","require":"css","optional":"css-extras","owner":"Golmote"},"lilypond":{"title":"LilyPond","require":"scheme","alias":"ly","owner":"RunDevelopment"},"liquid":{"title":"Liquid","owner":"cinhtau"},"lisp":{"title":"Lisp","alias":["emacs","elisp","emacs-lisp"],"owner":"JuanCaicedo"},"livescript":{"title":"LiveScript","owner":"Golmote"},"llvm":{"title":"LLVM IR","owner":"porglezomp"},"lolcode":{"title":"LOLCODE","owner":"Golmote"},"lua":{"title":"Lua","owner":"Golmote"},"makefile":{"title":"Makefile","owner":"Golmote"},"markdown":{"title":"Markdown","require":"markup","alias":"md","owner":"Golmote"},"markup-templating":{"title":"Markup templating","require":"markup","owner":"Golmote"},"matlab":{"title":"MATLAB","owner":"Golmote"},"mel":{"title":"MEL","owner":"Golmote"},"mizar":{"title":"Mizar","owner":"Golmote"},"monkey":{"title":"Monkey","owner":"Golmote"},"moonscript":{"title":"MoonScript","alias":"moon","owner":"RunDevelopment"},"n1ql":{"title":"N1QL","owner":"TMWilds"},"n4js":{"title":"N4JS","require":"javascript","optional":"jsdoc","alias":"n4jsd","owner":"bsmith-n4"},"nand2tetris-hdl":{"title":"Nand To Tetris HDL","owner":"stephanmax"},"nasm":{"title":"NASM","owner":"rbmj"},"neon":{"title":"NEON","owner":"nette"},"nginx":{"title":"nginx","owner":"westonganger","require":"clike"},"nim":{"title":"Nim","owner":"Golmote"},"nix":{"title":"Nix","owner":"Golmote"},"nsis":{"title":"NSIS","owner":"idleberg"},"objectivec":{"title":"Objective-C","require":"c","owner":"uranusjr"},"ocaml":{"title":"OCaml","owner":"Golmote"},"opencl":{"title":"OpenCL","require":"c","modify":["c","cpp"],"owner":"Milania1"},"oz":{"title":"Oz","owner":"Golmote"},"parigp":{"title":"PARI/GP","owner":"Golmote"},"parser":{"title":"Parser","require":"markup","owner":"Golmote"},"pascal":{"title":"Pascal","alias":"objectpascal","aliasTitles":{"objectpascal":"Object Pascal"},"owner":"Golmote"},"pascaligo":{"title":"Pascaligo","owner":"DefinitelyNotAGoat"},"pcaxis":{"title":"PC-Axis","alias":"px","owner":"RunDevelopment"},"perl":{"title":"Perl","owner":"Golmote"},"php":{"title":"PHP","require":["clike","markup-templating"],"owner":"milesj"},"phpdoc":{"title":"PHPDoc","require":["php","javadoclike"],"modify":"php","owner":"RunDevelopment"},"php-extras":{"title":"PHP Extras","require":"php","modify":"php","owner":"milesj"},"plsql":{"title":"PL/SQL","require":"sql","owner":"Golmote"},"powerquery":{"title":"PowerQuery","alias":["pq","mscript"],"owner":"peterbud"},"powershell":{"title":"PowerShell","owner":"nauzilus"},"processing":{"title":"Processing","require":"clike","owner":"Golmote"},"prolog":{"title":"Prolog","owner":"Golmote"},"properties":{"title":".properties","owner":"Golmote"},"protobuf":{"title":"Protocol Buffers","require":"clike","owner":"just-boris"},"pug":{"title":"Pug","require":["markup","javascript"],"optional":["coffeescript","ejs","handlebars","less","livescript","markdown","scss","stylus","twig"],"owner":"Golmote"},"puppet":{"title":"Puppet","owner":"Golmote"},"pure":{"title":"Pure","optional":["c","cpp","fortran"],"owner":"Golmote"},"python":{"title":"Python","alias":"py","owner":"multipetros"},"q":{"title":"Q (kdb+ database)","owner":"Golmote"},"qml":{"title":"QML","require":"javascript","owner":"RunDevelopment"},"qore":{"title":"Qore","require":"clike","owner":"temnroegg"},"r":{"title":"R","owner":"Golmote"},"jsx":{"title":"React JSX","require":["markup","javascript"],"optional":["jsdoc","js-extras","js-templates"],"owner":"vkbansal"},"tsx":{"title":"React TSX","require":["jsx","typescript"]},"renpy":{"title":"Ren'py","owner":"HyuchiaDiego"},"reason":{"title":"Reason","require":"clike","owner":"Golmote"},"regex":{"title":"Regex","modify":["actionscript","coffeescript","flow","javascript","typescript","vala"],"owner":"RunDevelopment"},"rest":{"title":"reST (reStructuredText)","owner":"Golmote"},"rip":{"title":"Rip","owner":"ravinggenius"},"roboconf":{"title":"Roboconf","owner":"Golmote"},"robotframework":{"title":"Robot Framework","alias":"robot","owner":"RunDevelopment"},"ruby":{"title":"Ruby","require":"clike","alias":"rb","owner":"samflores"},"rust":{"title":"Rust","owner":"Golmote"},"sas":{"title":"SAS","optional":["groovy","lua","sql"],"owner":"Golmote"},"sass":{"title":"Sass (Sass)","require":"css","owner":"Golmote"},"scss":{"title":"Sass (Scss)","require":"css","optional":"css-extras","owner":"MoOx"},"scala":{"title":"Scala","require":"java","owner":"jozic"},"scheme":{"title":"Scheme","owner":"bacchus123"},"shell-session":{"title":"Shell session","require":"bash","owner":"RunDevelopment"},"smalltalk":{"title":"Smalltalk","owner":"Golmote"},"smarty":{"title":"Smarty","require":"markup-templating","owner":"Golmote"},"solidity":{"title":"Solidity (Ethereum)","require":"clike","owner":"glachaud"},"solution-file":{"title":"Solution file","alias":"sln","owner":"RunDevelopment"},"soy":{"title":"Soy (Closure Template)","require":"markup-templating","owner":"Golmote"},"sparql":{"title":"SPARQL","require":"turtle","owner":"Triply-Dev","alias":"rq"},"splunk-spl":{"title":"Splunk SPL","owner":"RunDevelopment"},"sqf":{"title":"SQF: Status Quo Function (Arma 3)","require":"clike","owner":"RunDevelopment"},"sql":{"title":"SQL","owner":"multipetros"},"stylus":{"title":"Stylus","owner":"vkbansal"},"swift":{"title":"Swift","require":"clike","owner":"chrischares"},"tap":{"title":"TAP","owner":"isaacs","require":"yaml"},"tcl":{"title":"Tcl","owner":"PeterChaplin"},"textile":{"title":"Textile","require":"markup","optional":"css","owner":"Golmote"},"toml":{"title":"TOML","owner":"RunDevelopment"},"tt2":{"title":"Template Toolkit 2","require":["clike","markup-templating"],"owner":"gflohr"},"turtle":{"title":"Turtle","alias":"trig","aliasTitles":{"trig":"TriG"},"owner":"jakubklimek"},"twig":{"title":"Twig","require":"markup","owner":"brandonkelly"},"typescript":{"title":"TypeScript","require":"javascript","optional":"js-templates","alias":"ts","owner":"vkbansal"},"t4-cs":{"title":"T4 Text Templates (C#)","require":["t4-templating","csharp"],"alias":"t4","owner":"RunDevelopment"},"t4-vb":{"title":"T4 Text Templates (VB)","require":["t4-templating","visual-basic"],"owner":"RunDevelopment"},"t4-templating":{"title":"T4 templating","owner":"RunDevelopment"},"vala":{"title":"Vala","require":"clike","owner":"TemplarVolk"},"vbnet":{"title":"VB.Net","require":"basic","owner":"Bigsby"},"velocity":{"title":"Velocity","require":"markup","owner":"Golmote"},"verilog":{"title":"Verilog","owner":"a-rey"},"vhdl":{"title":"VHDL","owner":"a-rey"},"vim":{"title":"vim","owner":"westonganger"},"visual-basic":{"title":"Visual Basic","alias":"vb","owner":"Golmote"},"wasm":{"title":"WebAssembly","owner":"Golmote"},"wiki":{"title":"Wiki markup","require":"markup","owner":"Golmote"},"xeora":{"title":"Xeora","require":"markup","alias":"xeoracube","aliasTitles":{"xeoracube":"XeoraCube"},"owner":"freakmaxi"},"xojo":{"title":"Xojo (REALbasic)","owner":"Golmote"},"xquery":{"title":"XQuery","require":"markup","owner":"Golmote"},"yaml":{"title":"YAML","alias":"yml","owner":"hason"},"zig":{"title":"Zig","owner":"RunDevelopment"}},"plugins":{"meta":{"path":"plugins/{id}/prism-{id}","link":"plugins/{id}/"},"line-highlight":{"title":"Line Highlight","description":"Highlights specific lines and/or line ranges."},"line-numbers":{"title":"Line Numbers","description":"Line number at the beginning of code lines.","owner":"kuba-kubula"},"show-invisibles":{"title":"Show Invisibles","description":"Show hidden characters such as tabs and line breaks.","optional":["autolinker","data-uri-highlight"]},"autolinker":{"title":"Autolinker","description":"Converts URLs and emails in code to clickable links. Parses Markdown links in comments."},"wpd":{"title":"WebPlatform Docs","description":"Makes tokens link to <a href=\"https://webplatform.github.io/docs/\">WebPlatform.org documentation</a>. The links open in a new tab."},"custom-class":{"title":"Custom Class","description":"This plugin allows you to prefix Prism's default classes (<code>.comment</code> can become <code>.namespace--comment</code>) or replace them with your defined ones (like <code>.editor__comment</code>). You can even add new classes.","owner":"dvkndn","noCSS":true},"file-highlight":{"title":"File Highlight","description":"Fetch external files and highlight them with Prism. Used on the Prism website itself.","noCSS":true},"show-language":{"title":"Show Language","description":"Display the highlighted language in code blocks (inline code does not show the label).","owner":"nauzilus","noCSS":true,"require":"toolbar"},"jsonp-highlight":{"title":"JSONP Highlight","description":"Fetch content with JSONP and highlight some interesting content (e.g. GitHub/Gists or Bitbucket API).","noCSS":true,"owner":"nauzilus"},"highlight-keywords":{"title":"Highlight Keywords","description":"Adds special CSS classes for each keyword matched in the code. For example, the keyword <code>if</code> will have the class <code>keyword-if</code> as well. You can have fine grained control over the appearance of each keyword by providing your own CSS rules.","owner":"vkbansal","noCSS":true},"remove-initial-line-feed":{"title":"Remove initial line feed","description":"Removes the initial line feed in code blocks.","owner":"Golmote","noCSS":true},"inline-color":{"title":"Inline color","description":"Adds a small inline preview for colors in style sheets.","require":"css-extras","owner":"RunDevelopment"},"previewers":{"title":"Previewers","description":"Previewers for angles, colors, gradients, easing and time.","require":"css-extras","owner":"Golmote"},"autoloader":{"title":"Autoloader","description":"Automatically loads the needed languages to highlight the code blocks.","owner":"Golmote","noCSS":true},"keep-markup":{"title":"Keep Markup","description":"Prevents custom markup from being dropped out during highlighting.","owner":"Golmote","optional":"normalize-whitespace","noCSS":true},"command-line":{"title":"Command Line","description":"Display a command line with a prompt and, optionally, the output/response from the commands.","owner":"chriswells0"},"unescaped-markup":{"title":"Unescaped Markup","description":"Write markup without having to escape anything."},"normalize-whitespace":{"title":"Normalize Whitespace","description":"Supports multiple operations to normalize whitespace in code blocks.","owner":"zeitgeist87","optional":"unescaped-markup","noCSS":true},"data-uri-highlight":{"title":"Data-URI Highlight","description":"Highlights data-URI contents.","owner":"Golmote","noCSS":true},"toolbar":{"title":"Toolbar","description":"Attach a toolbar for plugins to easily register buttons on the top of a code block.","owner":"mAAdhaTTah"},"copy-to-clipboard":{"title":"Copy to Clipboard Button","description":"Add a button that copies the code block to the clipboard when clicked.","owner":"mAAdhaTTah","require":"toolbar","noCSS":true},"download-button":{"title":"Download Button","description":"A button in the toolbar of a code block adding a convenient way to download a code file.","owner":"Golmote","require":"toolbar","noCSS":true},"match-braces":{"title":"Match braces","description":"Highlights matching braces.","owner":"RunDevelopment"},"diff-highlight":{"title":"Diff Highlight","description":"Highlights the code inside diff blocks.","owner":"RunDevelopment","require":"diff"},"filter-highlight-all":{"title":"Filter highlightAll","description":"Filters the elements the <code>highlightAll</code> and <code>highlightAllUnder</code> methods actually highlight.","owner":"RunDevelopment","noCSS":true},"treeview":{"title":"Treeview","description":"A language with special styles to highlight file system tree structures.","owner":"Golmote"}}};
 if ( true && module.exports) { module.exports = components; }
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37116,12 +37135,6 @@ if (true) {
 
 
 /***/ }),
-/* 299 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
 /* 300 */
 /***/ (function(module, exports) {
 
@@ -37129,6 +37142,12 @@ if (true) {
 
 /***/ }),
 /* 301 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37318,7 +37337,7 @@ var nprogress = __webpack_require__(68);
 var nprogress_default = /*#__PURE__*/__webpack_require__.n(nprogress);
 
 // CONCATENATED MODULE: ./.docusaurus/client-modules.js
-/* harmony default export */ var client_modules = ([__webpack_require__(135),__webpack_require__(135),__webpack_require__(294),__webpack_require__(295),__webpack_require__(299)]);
+/* harmony default export */ var client_modules = ([__webpack_require__(135),__webpack_require__(135),__webpack_require__(294),__webpack_require__(295),__webpack_require__(296),__webpack_require__(300)]);
 // CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/client-lifecycles-dispatcher.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -37340,7 +37359,7 @@ lifecycles[lifecycleAction]=function(...args){dispatchLifecycleAction(lifecycleA
  */ // Memoize previously normalized pathnames.
 const pathnames={};function normalizeLocation(location){if(pathnames[location.pathname]){return{...location,pathname:pathnames[location.pathname]};}let pathname=location.pathname||'/';pathname=pathname.trim().replace(/\/index\.html$/,'');if(pathname===''){pathname='/';}pathnames[location.pathname]=pathname;return{...location,pathname};}/* harmony default export */ var client_normalizeLocation = (normalizeLocation);
 // EXTERNAL MODULE: ./node_modules/nprogress/nprogress.css
-var nprogress_nprogress = __webpack_require__(300);
+var nprogress_nprogress = __webpack_require__(301);
 
 // CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/PendingNavigation.js
 /**
