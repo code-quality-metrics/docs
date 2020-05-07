@@ -60,6 +60,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} CQ. Built with Docusaurus.`,
     },
+    googleAnalytics: {
+        trackingID: 'UA-165829341-2',
+    },
   },
   presets: [
     [
