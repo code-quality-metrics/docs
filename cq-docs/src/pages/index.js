@@ -21,7 +21,7 @@ const features = [
   {
     title: <>Docs</>,
     // imageUrl: 'img/undraw_docusaurus_tree.svg',
-    to: 'docs/doc1',
+    to: 'docs/node/intro',
     description: (
       <>
         Notes and documentation on technology.
@@ -72,7 +72,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/doc1')}>
+              to={useBaseUrl('docs/node/intro')}>
               Get Started
             </Link>
           </div>

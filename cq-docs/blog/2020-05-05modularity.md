@@ -49,9 +49,3 @@ Submodules are a thing. If a module is only used by another module and won't be 
 Be aware of your system context. Sometimes too many modules don't make sense for small systems. Modularization should be subjective and should not be pursued if it won't increase clarity.
 
 [5 essentials of modular design](https://medium.com/@shanebdavis/the-5-essential-elements-of-modular-software-design-6b333918e543)
-
-For node: TODO:
-
-- libs (external, separate directory)
-- organize db models (other repo)
-- feature modularization

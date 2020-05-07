@@ -1,9 +1,3 @@
----
-id: doc2
-title: Cryptography in node
-sidebar_label: Cryptography in node
----
-
 ## intro
 
 ### crypto module

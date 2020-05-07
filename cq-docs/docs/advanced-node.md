@@ -1,9 +1,3 @@
----
-id: doc1
-title: Advanced node js
-sidebar_label: Advanced node js
----
-
 ## Node != javascript
 
 ### V8 and libuv
