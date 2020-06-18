@@ -18,21 +18,21 @@
 <link rel="stylesheet" href="/docs-and-blog/styles.cb408154.css">
 
 
-<link rel="preload" href="/docs-and-blog/styles.463d0a4b.js" as="script">
+<link rel="preload" href="/docs-and-blog/styles.8384fe24.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/runtime~main.08bd859d.js" as="script">
+<link rel="preload" href="/docs-and-blog/runtime~main.a2d5bfc9.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/main.f2733a76.js" as="script">
+<link rel="preload" href="/docs-and-blog/main.a32aebf3.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/1.89183380.js" as="script">
+<link rel="preload" href="/docs-and-blog/1.962c52eb.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/2.7ca4265b.js" as="script">
+<link rel="preload" href="/docs-and-blog/2.66d9db16.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/3.57a4435b.js" as="script">
+<link rel="preload" href="/docs-and-blog/3.3a20d622.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/ccc49370.67ed2bb1.js" as="script">
+<link rel="preload" href="/docs-and-blog/ccc49370.e717105c.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/35c789cd.aebddb5e.js" as="script">
+<link rel="preload" href="/docs-and-blog/35c789cd.c733b459.js" as="script">
 
 </head>
 <body>
@@ -42,21 +42,21 @@
 We should prevent code bases from growing organically.</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="things-to-consider-when-designing-a-module"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#things-to-consider-when-designing-a-module" title="Direct link to heading">#</a>Things to consider when designing a module</h2><p>There are certain things we should take into account when deciding if a new feature should be a module or not.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="comply-with-the-single-responsibility-principle"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#comply-with-the-single-responsibility-principle" title="Direct link to heading">#</a>Comply with the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single responsibility principle</a>.</h3><p>The single responsibility principle is a computer programming principle that states that every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class, module or function.</p><p>A module should be narrow and focused. It should have exclusive responsibility of a piece of the whole system. Every interaction with that piece should be handle by the module. </p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="api-design"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#api-design" title="Direct link to heading">#</a>API design</h3><p>A module should provide an interface for other modules or clients to interact with it. Pay special attencion to the design and definition of this interface (API). See <a href="https://nordicapis.com/the-three-principles-of-excellent-api-design/">The Three Principles of Excellent API Design</a>: Purpose, Usability and Constraints.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="encapsulation"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#encapsulation" title="Direct link to heading">#</a>Encapsulation</h3><p>Limit the exposure of modules within their system. Only provide a controlled interface for access. The inner implementation should be changable withoutn interfiering with the clients. Control the dependencies between modules and minimize them to improve scalability. The network formed by the modules should be logical, easy to follow and simple.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="avoid-mono-dependencies"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#avoid-mono-dependencies" title="Direct link to heading">#</a>Avoid mono-dependencies</h3><p>Submodules are a thing. If a module is only used by another module and won&#x27;t be shared by any other modules maybe it should be part of its parent. Creating modules that have a 1-1 relation could generate mess in the system. Consider merging those modules or have one become a submodule.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="be-aware-of-context"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#be-aware-of-context" title="Direct link to heading">#</a>Be aware of context</h3><p>Be aware of your system context. Sometimes too many modules don&#x27;t make sense for small systems. Modularization should be subjective and should not be pursued if it won&#x27;t increase clarity.</p><p><a href="https://medium.com/@shanebdavis/the-5-essential-elements-of-modular-software-design-6b333918e543">5 essentials of modular design</a></p></section><footer class="row margin-vert--lg"><div class="col"><strong>Tags:</strong><a class="margin-horiz--sm" href="/docs-and-blog/blog/tags/node">node</a><a class="margin-horiz--sm" href="/docs-and-blog/blog/tags/modularity">modularity</a></div></footer></article><div></div><div class="margin-vert--xl"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs-and-blog/blog/node-best-practices"><div class="pagination-nav__link--sublabel">Previous Post</div><div class="pagination-nav__link--label">« Best practices in Node JS</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs-and-blog/blog/testing"><div class="pagination-nav__link--sublabel">Next Post</div><div class="pagination-nav__link--label">Testing in Node »</div></a></div></nav></div></div></div></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Blog posts</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/node">Node</a></li><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/react">React</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" to="https://code-quality-metrics.github.io" href="https://code-quality-metrics.github.io">Main Page</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 CQ. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/docs-and-blog/styles.463d0a4b.js"></script>
+<script src="/docs-and-blog/styles.8384fe24.js"></script>
 
-<script src="/docs-and-blog/runtime~main.08bd859d.js"></script>
+<script src="/docs-and-blog/runtime~main.a2d5bfc9.js"></script>
 
-<script src="/docs-and-blog/main.f2733a76.js"></script>
+<script src="/docs-and-blog/main.a32aebf3.js"></script>
 
-<script src="/docs-and-blog/1.89183380.js"></script>
+<script src="/docs-and-blog/1.962c52eb.js"></script>
 
-<script src="/docs-and-blog/2.7ca4265b.js"></script>
+<script src="/docs-and-blog/2.66d9db16.js"></script>
 
-<script src="/docs-and-blog/3.57a4435b.js"></script>
+<script src="/docs-and-blog/3.3a20d622.js"></script>
 
-<script src="/docs-and-blog/ccc49370.67ed2bb1.js"></script>
+<script src="/docs-and-blog/ccc49370.e717105c.js"></script>
 
-<script src="/docs-and-blog/35c789cd.aebddb5e.js"></script>
+<script src="/docs-and-blog/35c789cd.c733b459.js"></script>
 
 
 </body>
