@@ -27,6 +27,14 @@ module.exports = {
         ],
       }
     ],
+    "AWS + Docker": [
+      "aws/intro",
+      {
+        "Practical examples": [
+          "aws/examples/example1"
+        ]
+      }
+    ],
     React: [],
   },
 };
