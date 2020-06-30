@@ -30,10 +30,12 @@ module.exports = {
     "AWS + Docker": [
       "aws/intro",
       "aws/microservices",
+      "aws/ecs",
       {
         "Practical examples": [
           "aws/examples/example1",
-          "aws/examples/example2"
+          "aws/examples/example2",
+          "aws/examples/example3"
         ]
       }
     ],
