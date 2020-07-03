@@ -18,25 +18,25 @@
 <link rel="stylesheet" href="/docs-and-blog/styles.cb408154.css">
 
 
-<link rel="preload" href="/docs-and-blog/styles.dd95a08a.js" as="script">
+<link rel="preload" href="/docs-and-blog/styles.85895549.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/runtime~main.9508e6aa.js" as="script">
+<link rel="preload" href="/docs-and-blog/runtime~main.6ce416f7.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/main.4772639c.js" as="script">
+<link rel="preload" href="/docs-and-blog/main.3f18cb6a.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/1.a8e8533e.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/2.50c86778.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/3.1661f6f5.js" as="script">
+<link rel="preload" href="/docs-and-blog/3.58bf734d.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/1be78505.c5ba2cde.js" as="script">
+<link rel="preload" href="/docs-and-blog/1be78505.77edad06.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/30c6e889.ff59d223.js" as="script">
+<link rel="preload" href="/docs-and-blog/30c6e889.5fdb2913.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/17896441.f5f5df5b.js" as="script">
+<link rel="preload" href="/docs-and-blog/17896441.7924a4fd.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/8ad50262.8eff94d8.js" as="script">
+<link rel="preload" href="/docs-and-blog/8ad50262.a3ab72e8.js" as="script">
 
 </head>
 <body>
@@ -48,25 +48,25 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// DECRYPT</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// decipher</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> decipher </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> crypto</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">createDecipheriv</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">algorithm</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> key</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> iv</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> decrypted </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> decipher</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">update</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">encrypted</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;hex&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;utf8&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">decrypted </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> decipher</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">final</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;utf8&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span></div></div></div></div></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="protect-keys"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#protect-keys" title="Direct link to heading">#</a>Protect keys</h3><p>Find a KMS. Store keys encrypted by a master key. Keys will be store in a &quot;key store&quot;. Rotate keys. AWS kms, Azure key vault, vault (open source).</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="vault"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#vault" title="Direct link to heading">#</a>Vault</h4><p>Master key is divided in pieces (shard) to be shared by different people/machines. With n shards the master key can be generated.</p><p>Authenticate with vault api with user+pass or certificates. Then request the key and connect to your db to decrypt or encrypt data.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs-and-blog/docs/node/cryptography/passwords"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« Passwords</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs-and-blog/docs/node/cryptography/data-in-transit"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">Data in transit »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#protect-data-at-rest" class="contents__link">Protect data at rest</a><ul><li><a href="#encrypt" class="contents__link">Encrypt</a></li><li><a href="#protect-keys" class="contents__link">Protect keys</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Blog posts</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/node">Node</a></li><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/react">React</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" to="https://code-quality-metrics.github.io" href="https://code-quality-metrics.github.io">Main Page</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 CQ. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/docs-and-blog/styles.dd95a08a.js"></script>
+<script src="/docs-and-blog/styles.85895549.js"></script>
 
-<script src="/docs-and-blog/runtime~main.9508e6aa.js"></script>
+<script src="/docs-and-blog/runtime~main.6ce416f7.js"></script>
 
-<script src="/docs-and-blog/main.4772639c.js"></script>
+<script src="/docs-and-blog/main.3f18cb6a.js"></script>
 
 <script src="/docs-and-blog/1.a8e8533e.js"></script>
 
 <script src="/docs-and-blog/2.50c86778.js"></script>
 
-<script src="/docs-and-blog/3.1661f6f5.js"></script>
+<script src="/docs-and-blog/3.58bf734d.js"></script>
 
-<script src="/docs-and-blog/1be78505.c5ba2cde.js"></script>
+<script src="/docs-and-blog/1be78505.77edad06.js"></script>
 
-<script src="/docs-and-blog/30c6e889.ff59d223.js"></script>
+<script src="/docs-and-blog/30c6e889.5fdb2913.js"></script>
 
-<script src="/docs-and-blog/17896441.f5f5df5b.js"></script>
+<script src="/docs-and-blog/17896441.7924a4fd.js"></script>
 
-<script src="/docs-and-blog/8ad50262.8eff94d8.js"></script>
+<script src="/docs-and-blog/8ad50262.a3ab72e8.js"></script>
 
 
 </body>

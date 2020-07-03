@@ -18,25 +18,25 @@
 <link rel="stylesheet" href="/docs-and-blog/styles.cb408154.css">
 
 
-<link rel="preload" href="/docs-and-blog/styles.dd95a08a.js" as="script">
+<link rel="preload" href="/docs-and-blog/styles.85895549.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/runtime~main.9508e6aa.js" as="script">
+<link rel="preload" href="/docs-and-blog/runtime~main.6ce416f7.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/main.4772639c.js" as="script">
+<link rel="preload" href="/docs-and-blog/main.3f18cb6a.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/1.a8e8533e.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/2.50c86778.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/3.1661f6f5.js" as="script">
+<link rel="preload" href="/docs-and-blog/3.58bf734d.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/1be78505.c5ba2cde.js" as="script">
+<link rel="preload" href="/docs-and-blog/1be78505.77edad06.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/30c6e889.ff59d223.js" as="script">
+<link rel="preload" href="/docs-and-blog/30c6e889.5fdb2913.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/17896441.f5f5df5b.js" as="script">
+<link rel="preload" href="/docs-and-blog/17896441.7924a4fd.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/703bd36c.bf798b10.js" as="script">
+<link rel="preload" href="/docs-and-blog/703bd36c.4cd8d211.js" as="script">
 
 </head>
 <body>
@@ -61,25 +61,25 @@ You should see <em>/the-shared-folder</em></p></li></ol><h3><a aria-hidden="true
 With <code>docker inspect shared-data</code> you can check where the volume is stored (/var/lib/docker/volumes/shared-data/_data)</p></li><li><p>Copy some files into that directory.</p></li><li><p>Run docker compose <code>docker-compose up</code> or <code>docker-compose start</code> (this wont hold the command line)</p></li></ol><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="3-local-deploy-with-elastic-beanstalk"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#3-local-deploy-with-elastic-beanstalk" title="Direct link to heading">#</a>3. Local deploy with Elastic Beanstalk</h2><blockquote><p>It uses docker-compose under the hood</p></blockquote><p>3 main ways to deploy to beanstalk if you are deploying a single container to a host:</p><ol><li>Create a Dockerfile to have Elastic Beanstalk build and run a custom image.</li><li>Create a Dockerrun.aws.json file to deploy a Docker image from a hosted repository to Elastic Beanstalk.</li><li>Create a .zip file containing your application files and any application file dependencies.  The Dockerfile and the Dockerrun.aws.json file.</li></ol><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="option-3"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#option-3" title="Direct link to heading">#</a>Option 3</h3><ol><li>Create a Dockerrun.aws.json file with the definition of the volume and the two containers.</li><li>Initialize the configuration <code>eb init -k vockey -p &quot;64bit Amazon Linux 2018.03 v2.20.3 running Multi-container Docker 19.03.6-ce (Generic)&quot; --region us-west-2 for_eb</code></li><li>Run locally <code>eb local run</code></li></ol></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs-and-blog/docs/aws/examples/example1"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« Building and publishing images</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs-and-blog/docs/aws/examples/example3"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">Deploying to EB and ECS + seeded volume »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#1-create-images-and-a-shared-volume" class="contents__link">1. Create images and a shared volume</a></li><li><a href="#2-pre-seed-a-volume-with-some-data-and-then-share-that" class="contents__link">2. Pre-seed a volume with some data and then share that</a><ul><li><a href="#anonymous-volume" class="contents__link">Anonymous volume</a></li><li><a href="#named-volumes" class="contents__link">Named volumes</a></li></ul></li><li><a href="#3-local-deploy-with-elastic-beanstalk" class="contents__link">3. Local deploy with Elastic Beanstalk</a><ul><li><a href="#option-3" class="contents__link">Option 3</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Blog posts</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/node">Node</a></li><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/react">React</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" to="https://code-quality-metrics.github.io" href="https://code-quality-metrics.github.io">Main Page</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 CQ. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/docs-and-blog/styles.dd95a08a.js"></script>
+<script src="/docs-and-blog/styles.85895549.js"></script>
 
-<script src="/docs-and-blog/runtime~main.9508e6aa.js"></script>
+<script src="/docs-and-blog/runtime~main.6ce416f7.js"></script>
 
-<script src="/docs-and-blog/main.4772639c.js"></script>
+<script src="/docs-and-blog/main.3f18cb6a.js"></script>
 
 <script src="/docs-and-blog/1.a8e8533e.js"></script>
 
 <script src="/docs-and-blog/2.50c86778.js"></script>
 
-<script src="/docs-and-blog/3.1661f6f5.js"></script>
+<script src="/docs-and-blog/3.58bf734d.js"></script>
 
-<script src="/docs-and-blog/1be78505.c5ba2cde.js"></script>
+<script src="/docs-and-blog/1be78505.77edad06.js"></script>
 
-<script src="/docs-and-blog/30c6e889.ff59d223.js"></script>
+<script src="/docs-and-blog/30c6e889.5fdb2913.js"></script>
 
-<script src="/docs-and-blog/17896441.f5f5df5b.js"></script>
+<script src="/docs-and-blog/17896441.7924a4fd.js"></script>
 
-<script src="/docs-and-blog/703bd36c.bf798b10.js"></script>
+<script src="/docs-and-blog/703bd36c.4cd8d211.js"></script>
 
 
 </body>

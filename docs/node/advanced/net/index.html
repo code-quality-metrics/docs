@@ -18,23 +18,23 @@
 <link rel="stylesheet" href="/docs-and-blog/styles.cb408154.css">
 
 
-<link rel="preload" href="/docs-and-blog/styles.dd95a08a.js" as="script">
+<link rel="preload" href="/docs-and-blog/styles.85895549.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/runtime~main.9508e6aa.js" as="script">
+<link rel="preload" href="/docs-and-blog/runtime~main.6ce416f7.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/main.4772639c.js" as="script">
+<link rel="preload" href="/docs-and-blog/main.3f18cb6a.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/1.a8e8533e.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/2.50c86778.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/3.1661f6f5.js" as="script">
+<link rel="preload" href="/docs-and-blog/3.58bf734d.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/1be78505.c5ba2cde.js" as="script">
+<link rel="preload" href="/docs-and-blog/1be78505.77edad06.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/30c6e889.ff59d223.js" as="script">
+<link rel="preload" href="/docs-and-blog/30c6e889.5fdb2913.js" as="script">
 
-<link rel="preload" href="/docs-and-blog/17896441.f5f5df5b.js" as="script">
+<link rel="preload" href="/docs-and-blog/17896441.7924a4fd.js" as="script">
 
 <link rel="preload" href="/docs-and-blog/f5e6c50e.93776856.js" as="script">
 
@@ -47,23 +47,23 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  socket</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">on</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;end&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;Client disconnected&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></div></div></div></div><p>We also have to listen to a port to run the server</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-js codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">server</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">listen</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">8000</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> </span><span class="token console class-name" style="color:rgb(255, 203, 107)">console</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">log</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;Server bound&#x27;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></div></div></div></div><p>For making a basic chat we can read data from the sockets and write that data to every connected client. For this we should track all sockets and handle connections and disconnections.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="dns-module"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#dns-module" title="Direct link to heading">#</a>dns module</h3><p>node provides a dns native module. lookup can translate urls into IPs, it uses libuv the rest of the methods uses the network. reverse is the opposite of lookup.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs-and-blog/docs/node/advanced/modularity"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« Modularity</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs-and-blog/docs/node/advanced/udp"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">UDP sockets »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#creating-a-net-server" class="contents__link">Creating a net server</a></li><li><a href="#dns-module" class="contents__link">dns module</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Blog posts</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/node">Node</a></li><li class="footer__item"><a class="footer__link-item" href="/docs-and-blog/blog/tags/react">React</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" to="https://code-quality-metrics.github.io" href="https://code-quality-metrics.github.io">Main Page</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/code-quality-metrics">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 CQ. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/docs-and-blog/styles.dd95a08a.js"></script>
+<script src="/docs-and-blog/styles.85895549.js"></script>
 
-<script src="/docs-and-blog/runtime~main.9508e6aa.js"></script>
+<script src="/docs-and-blog/runtime~main.6ce416f7.js"></script>
 
-<script src="/docs-and-blog/main.4772639c.js"></script>
+<script src="/docs-and-blog/main.3f18cb6a.js"></script>
 
 <script src="/docs-and-blog/1.a8e8533e.js"></script>
 
 <script src="/docs-and-blog/2.50c86778.js"></script>
 
-<script src="/docs-and-blog/3.1661f6f5.js"></script>
+<script src="/docs-and-blog/3.58bf734d.js"></script>
 
-<script src="/docs-and-blog/1be78505.c5ba2cde.js"></script>
+<script src="/docs-and-blog/1be78505.77edad06.js"></script>
 
-<script src="/docs-and-blog/30c6e889.ff59d223.js"></script>
+<script src="/docs-and-blog/30c6e889.5fdb2913.js"></script>
 
-<script src="/docs-and-blog/17896441.f5f5df5b.js"></script>
+<script src="/docs-and-blog/17896441.7924a4fd.js"></script>
 
 <script src="/docs-and-blog/f5e6c50e.93776856.js"></script>
 
